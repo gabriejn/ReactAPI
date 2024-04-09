@@ -1,42 +1,43 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 100vw;
+
   text-align: center;
 }
+body{
+  background-color: purple;
+  color: rgb(231, 161, 227);;
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+h2{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  color: rgb(38, 11, 36);
+
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.divbox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: none;
+  justify-content: center;
+  letter-spacing: 0.8rem;
+}
+#imgdisplay{
+  border: 15px black solid;
+}
+.firstimage{
+  display: flex;
+  align-items: center;
+  overflow: none;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+.secondimage{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  overflow: none;
+  flex-direction: column-reverse;
+
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
